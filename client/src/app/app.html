@@ -1,3 +1,8 @@
 <app-nav />
-
-<app-home />
+<div
+  [class.mt-24]="route.url !== '/'"
+  [class.container]="route.url !== '/'"
+  [class.mx-auto]="route.url !== '/'"
+>
+  <router-outlet />
+</div>
